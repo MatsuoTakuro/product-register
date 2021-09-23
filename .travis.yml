@@ -3,6 +3,7 @@ sudo: required
 services: docker
 
 before_install:
+  - docker login -u matsuotakuro -p bfe21f01-e74f-41e6-b0e2-48aec1358223
   - docker-compose up --build -d
 
 script:
